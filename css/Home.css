@@ -40,10 +40,101 @@ header{
     color: #444;
     font-weight: bold;
   }
+/* --CSS DEL BODY-- */
+body{
+    background-color: #0a141d;
+    background-image: url(/Hotel/Imagenes/exterior.jpg);
+}
+.container_home{
+        width: 100%;
+        margin: 5px; /*con 0 no da espacion entre conteneirs*/
+        overflow: hidden; /*lo que sobra se esconde */ 
+        background-color: #0a141d;
+        /*box-shadow: 0px 1px 10px rgba(240, 11, 11, 0.623);*/ /* SOLO MUESTRA UN BORDE AL REDEDOR DE CADA CAJA */
+        margin-left: 25px;
+        margin-right: 20px; /*Margenes a la caja*/
+        display: flex; /*Permite poner las imagenes al lado del texto*/
+        justify-content: flex-start; /*Texto del lado izquierdo*/
+        border-radius: 0.5rem; /*Le quita las esquinas a la caja*/
+}
+.data_home{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    align-content: space-between;
+}
+.boton_home{
+    display: inline-block;
+    background-color:#c2994e;
+    color: black;
+    width: max-content;
+    padding: 1rem 2rem;
+    border-radius: 75rem;
+    height: 25px;
+}
+.grid {
+    width: 100%;
+    max-width: 1100px;
+    grid-template-columns: repeat(3,100px); 
+    grid-template-rows: repeat(3,100px);
+    grid-gap: 20px; /*Espacio entre las imagenes del drid*/
+    height: 20%;
+   
+}
+.imagen_1{
+    width: 350px;
+    height: 20%;
+grid-row: span 1;
+grid-column: 1;
+}
+.imagen_2{
+    width: 380px;
+    grid-row: span 2;
+    grid-column: 1;
+}
+.imagen_3{
+    width: 350px;
+    height: 20%;
+    grid-row: span 2;
+    grid-column: 2;
+}
+.imagen_4{
+    width: 500px;
+    height: 40%;
+    grid-row: span 1;
+    grid-column: 2;
+}
+.imagen_5{
+    width: 500px;
+    height: 40%;
+    grid-row: span 3;
+    grid-column: 2;
+}
+.container_home2{
+    width: 100%;
+    margin: 5px;
+    overflow: hidden; /*lo que sobra se esconde */ 
+    background-color: #0a141d;
+    /*box-shadow: 0px 1px 10px rgba(240, 11, 11, 0.623);*/ /* SOLO MUESTRA UN BORDE AL REDEDOR DE CADA CAJA */
+    margin-left: 25px;
+    margin-right: 20px;
+    display: flex;  /*Permite poner las imagenes al lado del texto*/
+    justify-content: flex-end; /*Texto del lado derecho*/
+    border-radius: 0.5rem;
+}
 
-
-
-
+.container_home3{
+    width: 25%;
+    margin: 50px;
+    overflow: hidden; /*lo que sobra se esconde */ 
+    background-color: #0a141d;
+    /*box-shadow: 0px 1px 10px rgba(240, 11, 11, 0.623);*/ /* SOLO MUESTRA UN BORDE AL REDEDOR DE CADA CAJA */
+    margin-left: 625px; /*Margenes a la caja*/
+    align-content: center;
+    justify-content: center; /*Texto centrado*/
+    border-radius: 0.5rem; /*Le quita las esquinas a la caja*/
+}
 /* --CSS DE FOOTER-- */
 
 .pie-pagina{
