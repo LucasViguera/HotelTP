@@ -1,5 +1,4 @@
 
-
 /* CODIGO DEL MENU */ 
 
 header{
@@ -39,7 +38,7 @@ header{
 /* --CSS DEL BODY-- */
 body{
     background-color: #0a141d;
-    background-image: url(/Hotel/Imagenes/exterior.jpg);
+    /*background-image: url(/Hotel/Imagenes/exterior.jpg);*/
 }
 .container_home{
         width: 100%;
@@ -68,6 +67,10 @@ body{
     padding: 1rem 2rem;
     border-radius: 75rem;
     height: 25px;
+}
+/* Estilos para el botón al pasar el mouse */
+.boton_home:hover {
+    background-color: #0056b3;
 }
 .grid {
     width: 100%;
@@ -130,7 +133,21 @@ grid-column: 1;
     align-content: center;
     justify-content: center; /*Texto centrado*/
     border-radius: 0.5rem; /*Le quita las esquinas a la caja*/
+    /*lo de abajo es de chatgpt*/
+    width: 300px;
+    height: 200px;
+    background-color: #0a141d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
 }
+
 /* --CSS DE FOOTER-- */
 
 .pie-pagina{

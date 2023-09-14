@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +6,5 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
- /* constructor(private route: ActivatedRoute){
-    this.route.params.subscribe(params => console.log(params));
-  }
-*/
+
 }
