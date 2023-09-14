@@ -8,6 +8,8 @@ import { ReservaComponent } from './reserva/reserva.component';
 import { HabitacionesComponent } from './habitaciones/habitaciones.component';
 import { UbicacionComponent } from './ubicacion/ubicacion.component';
 
+//otros
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +19,7 @@ import { UbicacionComponent } from './ubicacion/ubicacion.component';
     UbicacionComponent
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule
   ],
