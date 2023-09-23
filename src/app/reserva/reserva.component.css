@@ -50,7 +50,7 @@ body{
     background-color: #e5e5f7;
     background-size: 10px 10px;
     min-height: 100vh;
-    background-image: url(/HotelTP/src/assets/Imagenes/imagenFondoReserva.jpg);
+    background-image: url(/Hotel/Imagenes/imagenFondoReserva.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -130,62 +130,5 @@ body{
     background-color: rgba(255, 228, 196, 0.623) ;
 }
 
-/*CHAT GPT*/
-/* Estilos para el formulario */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #0a141d;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilos para etiquetas de formulario */
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: #c2994e;
-  }
-  
-  /* Estilos para campos de entrada de formulario */
-  input[type="text"],
-  input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  /* Estilos para el botón de enviar */
-  button[type="submit"] {
-    background-color: #c2994e; /* Azul */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
-  }
-  
-  /* Estilos para mensajes de error */
-  .error-message {
-    color: #ff0000; /* Rojo */
-    font-size: 14px;
-    margin-top: 5px;
-  }
-  
-  /* Estilos para mensajes de éxito */
-  .success-message {
-    color: #228B22; /* Verde */
-    font-size: 14px;
-    margin-top: 5px;
-  }
+
 

@@ -1,29 +1,29 @@
-import { NgModule } from '@angular/core';
+import { NgModule, importProvidersFrom } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ReservaComponent } from './reserva/reserva.component';
-import { HabitacionesComponent } from './habitaciones/habitaciones.component';
+import { HabitacioneComponent } from './habitacione/habitacione.component';
 import { UbicacionComponent } from './ubicacion/ubicacion.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-//otros
-import { ReactiveFormsModule } from '@angular/forms';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ReservaComponent,
-    HabitacionesComponent,
+    HabitacioneComponent,
     UbicacionComponent
   ],
   imports: [
-    ReactiveFormsModule,
+    CarouselModule.forRoot(), 
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule{ }
