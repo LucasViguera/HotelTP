@@ -5,43 +5,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-/* CODIGO DEL MENU */ 
-
-header{
-    background-color: rgba(255, 228, 196, 0.623);
-    width: 100%;
-    clear: both;
-    display: flex;
-    margin: 0;
-
-}
-.Menu{
-    align-items: center;
-    display: block;
-    margin: 0;
-}
-
-.logo{
-    display: flex;
-}
-.logo img{
-    height: 74px;
-    margin-right: 50px;
-    width: auto;
-    display: flex;
-    margin-left: 15px;
-
-}
-.menu-item{
-    margin-left: 80px;
-    padding: 25px 0;
-    float: left;
-    list-style:none ;
-    text-decoration: none;
-    color: #444;
-    font-weight: bold;
-  }
-
 /* ---------------------------------------------------------- */
 
 
@@ -50,7 +13,7 @@ body{
     background-color: #e5e5f7;
     background-size: 10px 10px;
     min-height: 100vh;
-    background-image: url(/HotelTP/src/assets/Imagenes/imagenFondoReserva.jpg);
+    background-image: url(/assets/imagenFondoReserva.jpg);
     background-size: cover;
     background-position: center center;
 }

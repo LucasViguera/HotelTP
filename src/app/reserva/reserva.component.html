@@ -1,25 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reserva.component.css">
-    <title>RESERVAS-HOTEL</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="css/Imagenes/Hotel El Rosario-logos_black.png" alt="">
-            </div>
-            <div class="menu">
-                <a class="menu-item" href="../home/home.component.html">HOME </a>
-                <a class="menu-item" href="../reserva/reserva.component.html">RESERVAR </a>
-                <a class="menu-item" href="../habitaciones/habitaciones.component.html">HABITACIONES </a>
-                <a class="menu-item" href="../ubicacion/ubicacion.component.html">UBICACION </a>
-            </div>
-    </header>
 
-   <!-- <form class="formulario">
+<link rel="stylesheet" href="reserva.component.css">
+<body>
+    <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" formControlName="nombre">
+        <div class="error-message" *ngIf="formulario.get('nombre')?.hasError('required') && formulario.get('nombre')?.touched">
+          El nombre es requerido y debe tener al menos 3 caracteres.
+        </div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email">
+        <div class="error-message" *ngIf="formulario.get('email')?.hasError('required') && formulario.get('email')?.touched">
+          Ingresa un correo electrónico válido.
+        </div>
+      
+        <label for="Direccion">Direccion:</label>
+        <input type="text" id="direccion" formControlName="direccion">
+      
+        <label for="telefono">Telefono:</label>
+        <input type="text" id="telefono" formControlName="telefono">
+        
+      <!---  <mat-date-range-picker #picker></mat-date-range-picker>
+        <mat-date-range-input [rangePicker]="dateRangePicker">
+            <input matStartDate placeholder="Fecha de inicio" [formControl]="startDateControl">
+            <input matEndDate placeholder="Fecha de fin" [formControl]="endDateControl">
+          </mat-date-range-input>--> fechas sacadas ya que TIRA ERROR Y NO MUESTRA EL HTML SINO
+      
+        <button type="submit">Continuar</button>
+        <div class="success-message" *ngIf="exito">¡Formulario enviado con éxito!</div>
+      </form>
+
+
+
+
+
+
+      <!-- <form class="formulario">
      <h2 class="titulo_form">RESERVAS</h2>
      <div class="contenedor_form">
          <div class="grupo_form">
@@ -54,33 +70,5 @@
          </div>
              <input type="submit" class="submit_form"value="Continuar">
      </div>
-    </form>-->
-    <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" formControlName="nombre">
-        <div class="error-message" *ngIf="formulario.get('nombre')?.hasError('required') && formulario.get('nombre')?.touched">
-            El nombre es requerido y debe tener al menos 3 caracteres.
-          </div>
-          
-        <label for="email">Email:</label>
-        <input type="email" id="email" formControlName="email">
-        <div class="error-message" *ngIf="formulario.get('email')?.hasError('required') && formulario.get('email')?.touched">
-            Ingresa un correo electrónico válido.
-          </div>
-
-        <label for="Direccion">Direccion:</label>
-        <input type="direccion" id="direccion" formControlName="direccion">
-
-        <label for="telefono">Telefono:</label>
-        <input type="telefono" id="telefono" formControlName="telefono">
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" formControlName="email">
-      
-        <!-- Agrega más campos aquí si es necesario -->
-      
-        <button type="submit">Continuar</button>
-        <div class="success-message" *ngIf="exito">¡Formulario enviado con éxito!</div>
-    </form>
-      
+    </form>-->  
  </body>
