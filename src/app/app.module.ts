@@ -9,18 +9,31 @@ import { HabitacionesComponent } from './habitaciones/habitaciones.component';
 import { UbicacionComponent } from './ubicacion/ubicacion.component';
 
 //otros
+//import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
+import { NavbarComponent } from './navbar/navbar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ReservaComponent,
     HabitacionesComponent,
-    UbicacionComponent
+    UbicacionComponent,
+    NavbarComponent
   ],
   imports: [
+   // RouterModule.forRoot(routes),
+    FormsModule,
     ReactiveFormsModule,
     BrowserModule,
+    BrowserAnimationsModule, // Importa el módulo de animaciones
+    MatDatepickerModule, // Agrega MatDatepickerModule
+    MatInputModule, // Agrega MatInputModule
     AppRoutingModule
   ],
   providers: [],

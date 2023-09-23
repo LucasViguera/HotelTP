@@ -7,29 +7,7 @@
     <link rel="stylesheet" href="home.component.css">
     <title>HOME-HOTEL</title>
 </head>
-
 <body>
-    <header>
-        <div class="logo">
-            <img src="/HotelTP/src/assets/Imagenes/Hotel El Rosario-logos_black.png" alt="">
-            
-        </div>
-        <nav class="container-up">
-            <div class="menu">
-                <a class="menu-item" href="../home/home.component.html">HOME </a>
-                <a class="menu-item" href="../reserva/reserva.component.html">RESERVAR </a>
-                <a class="menu-item" href="../habitaciones/habitaciones.component.html">HABITACIONES </a>
-                <a class="menu-item" href="">SERVICIOS </a>
-                <a class="menu-item" href="../ubicacion/ubicacion.component.html">UBICACIÓN </a>
-                <a class="menu-item" href="">CONSULTAR RESERVA</a>
-                              <!-- <a class="menu-item" href="">CONTACTO</a>  --> <!-- En caso de hacer la consulta como un boton fuera del header lo podemos usar -->
-
-
-            </div>
-        </nav>
-    </header>
-</body>
-
  <div class="container_home">
             <div class="data_home">
                 <h3 class="subtitulo_home">
@@ -45,19 +23,19 @@
                          Disfruta Rosario como nunca lo hiciste!
                     Mira lo que te podemos ofrecer!
                 </p>
-                <a href="../habitaciones/habitaciones.component.html" class="boton_home">
+                <a routerLink="/habitaciones" class="boton_home">
                     Ver habitaciones
                 </a>
         </div>
         <div class="grid">
-            <img class="imagen_1" src="/HotelTP/src/assets/Imagenes/exterior.jpg" alt="">
+            <img class="imagen_1" src="./assets/exterior.jpg" alt="">
              
-            <img class="imagen_2" src="/HotelTP/src/assets/Imagenes/Pileta.jpg" alt="">
-            <img class="imagen_3" src="/HotelTP/src/assets/Imagenes/Recepción-del-hotel.jpg" alt="">
+            <img class="imagen_2" src="./assets/Pileta.jpg" alt="">
+            <img class="imagen_3" src="./assets/Recepción-del-hotel.jpg" alt="">
              
-            <img class="imagen_4" src="/HotelTP/src/assets/Imagenes/HabitacionDoble.jpg" alt="">
+            <img class="imagen_4" src="./assets/HabitacionDoble.jpg" alt="">
 
-            <img class="imagen_5" src="/HotelTP/src/assets/Imagenes/habitacionSimple.jpg" alt="">
+            <img class="imagen_5" src="./assets/HabitacionDoble.jpg" alt="">
     </div>
     <!--<carousel>
         <slide>
@@ -93,19 +71,19 @@
             RESERVA YA
         </h3>
             <p>¡Reserve su estancia ahora!</p>
-            <a href="../reserva/reserva.component.html" class="boton_home">
+            <a routerLink="/reservas" class="boton_home">
                 Reservar ya
             </a>
         </div>
 </div>
 
-
+</body>
 <footer class="pie-pagina">
     <div class="grupo-1">
         <div class="box">
             <figure>
                 <a href="#">
-                    <img src="/HotelTP/src/assets/Imagenes/Hotel El Rosario-logos.jpeg" alt="Logo de Hotel El Rosarino">
+                    <img src="./assets/Hotel El Rosario-logos_black.png" alt="Logo de Hotel El Rosarino">
                 </a>
             </figure>
         </div>
