@@ -2,49 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel El Rosarino</title>
-    <link rel="stylesheet" href="Reservas.html">
-    <link rel="stylesheet" href="Habitacion.html">
-    <link rel="stylesheet" href="css/Home.css">
-    <link rel="stylesheet" href="Ubicacion.html">
-    <!--ICONO DE PAGINA-->
-    <link rel="icon" type="image/x-icon" href="css/Imagenes/favicon-16x16.png" />   
-    <!--ICONOS-->
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="home.component.css">
+    <title>HOME-HOTEL</title>
 </head>
+
 <body>
-     <header>
-            <div class="logo">
-                <img src="css/Imagenes/Hotel El Rosario-logos_black.png" alt="">
-                
-            </div>
-         <nav class="container-up">
+    <header>
+        <div class="logo">
+            <img src="/Hotel/Imagenes/Hotel El Rosario-logos_black.png" alt="">
+            
+        </div>
+        <nav class="container-up">
             <div class="menu">
                 <a class="menu-item" href="../home/home.component.html">HOME </a>
                 <a class="menu-item" href="../reserva/reserva.component.html">RESERVAR </a>
                 <a class="menu-item" href="../habitacione/habitacione.component.html">HABITACIONES </a>
                 <a class="menu-item" href="">SERVICIOS </a>
-                <a class="menu-item" href="">OPINIONES </a>
+                <a class="menu-item" href="../ubicacion/ubicacion.component.html">UBICACIÓN </a>
                 <a class="menu-item" href="">CONSULTAR RESERVA</a>
-                <!-- <a class="menu-item" href="">CONTACTO</a>  --> <!-- En caso de hacer la consulta como un boton fuera del header lo podemos usar -->
+                              <!-- <a class="menu-item" href="">CONTACTO</a>  --> <!-- En caso de hacer la consulta como un boton fuera del header lo podemos usar -->
+
+
             </div>
         </nav>
     </header>
 </body>
+
  <div class="container_home">
             <div class="data_home">
                 <h3 class="subtitulo_home">
-                        SERVICIOS
+                    Descubre el Refugio de Lujo que Tú Mereces
                 </h3>
                 <p class="titulo_home">
-                    Disfruta Rosario como nunca lo hiciste!
-                </p>
-                <p>
+                    Bienvenido a un rincón de serenidad y sofisticación,
+                <p> 
+                 <p class="titulo_home">En nuestro hotel, la excelencia y la hospitalidad se entrelazan 
+                        para brindarte un refugio incomparable.
+                 </p>
+                <p class="titulo_home"> 
+                         Disfruta Rosario como nunca lo hiciste!
                     Mira lo que te podemos ofrecer!
                 </p>
-                <a href="../ubicacion/ubicacion.component.html" class="boton_home">
-                    Ver servicios
+                <a href="../habitacione/habitacione.component.html" class="boton_home">
+                    Ver habitaciones
                 </a>
         </div>
         <div class="grid">
@@ -57,8 +59,18 @@
 
             <img class="imagen_5" src="/Hotel/Imagenes/habitacionSimple.jpg" alt="">
     </div>
+    <!--<carousel>
+        <slide>
+          <img src="/Hotel/Imagenes/habitacionSimple.jpg" alt="Imagen 1">
+        </slide>
+        <slide>
+          <img src="/Hotel/Imagenes/habitacionSimple.jpg" alt="Imagen 2">
+        </slide>
+        Agrega más slides según tus necesidades
+    </carousel>  -->
+
 </div> 
-<div class="container_home2">
+<!--<div class="container_home2">
     <div class="data_home">
         <h3 class="subtitulo_home">
             HABITACIONES
@@ -74,23 +86,26 @@
         </a>
 </div>
 </div> 
-
+-->
 <div class="container_home3">
     <div class="data_home">
         <h3 class="subtitulo_home">
             RESERVA YA
         </h3>
-        <a href="../reserva/reserva.component.html" class="boton_home">
-            Reservar
-        </a>
+            <p>¡Reserve su estancia ahora!</p>
+            <a href="../reserva/reserva.component.html" class="boton_home">
+                Reservar ya
+            </a>
+        </div>
 </div>
-</div> 
+
+
 <footer class="pie-pagina">
     <div class="grupo-1">
         <div class="box">
             <figure>
                 <a href="#">
-                    <img src="css/Imagenes/iconodeFooter.png" alt="Logo de Hotel El Rosarino">
+                    <img src="/Hotel/Imagenes/iconodeFooter.png" alt="Logo de Hotel El Rosarino">
                 </a>
             </figure>
         </div>
