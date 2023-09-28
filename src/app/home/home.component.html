@@ -5,24 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.component.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <title>HOME-HOTEL</title>
 </head>
 <body>
  <div class="container_home">
             <div class="data_home">
                 <h3 class="subtitulo_home">
+                    <br>
                     Descubre el Refugio de Lujo que Tú Mereces
+                    <br>
+                    <br>
                 </h3>
                 <p class="titulo_home">
-                    Bienvenido a un rincón de serenidad y sofisticación,
+                    <br>
+                    Bienvenido a un rincón de serenidad y sofisticación
                 <p> 
-                 <p class="titulo_home">En nuestro hotel, la excelencia y la hospitalidad se entrelazan 
+                 <p class="titulo_home">
+                    <br>
+                    <br>
+                    En nuestro hotel, la excelencia y la hospitalidad se entrelazan 
                         para brindarte un refugio incomparable.
                  </p>
                 <p class="titulo_home"> 
+                    <br>
+                    <br>
                          Disfruta Rosario como nunca lo hiciste!
                     Mira lo que te podemos ofrecer!
                 </p>
+                <br>
+                <br>
+                <br>
                 <a routerLink="/habitaciones" class="boton_home">
                     Ver habitaciones
                 </a>
@@ -66,11 +80,13 @@
 </div> 
 -->
 <div class="container_home3">
-    <div class="data_home">
+    <div class="data_home2">
         <h3 class="subtitulo_home">
             RESERVA YA
         </h3>
-            <p>¡Reserve su estancia ahora!</p>
+        <br>
+            <p class="titulo_home">¡Reserve su estancia ahora!</p>
+            <br>
             <a routerLink="/reservas" class="boton_home">
                 Reservar ya
             </a>
@@ -78,32 +94,5 @@
 </div>
 
 </body>
-<footer class="pie-pagina">
-    <div class="grupo-1">
-        <div class="box">
-            <figure>
-                <a href="#">
-                    <img src="./assets/Hotel El Rosario-logos_black.png" alt="Logo de Hotel El Rosarino">
-                </a>
-            </figure>
-        </div>
-        <div class="box">
-            <h2>SOBRE NOSOTROS</h2>
-            <p>Somos una empresa hotelera que busca ayudar a los clientes a tener una excelente experiencia dentro de nuestras instalaciones.</p>
-            <p>Veni a conocernos, te esperamos!</p>
-        </div>
-        <div class="box">
-            <h2>SIGUENOS</h2>
-            <div class="red-social">
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-youtube"></a>
-            </div>
-        </div>
-    </div>
-    <div class="grupo-2">
-        <small>&copy; 2023 <b>Hotel El Rosario</b> - Todos los Derechos Reservados.</small>
-    </div>
-</footer>
+<app-footer></app-footer>
 </html>
