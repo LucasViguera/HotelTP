@@ -1,7 +1,9 @@
 /* CODIGO DEL MENU */ 
 
 header{
-    background-color: rgba(255, 228, 196, 0.623);
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #c59d54;
     width: 100%;
     clear:both;
     display: flex;
