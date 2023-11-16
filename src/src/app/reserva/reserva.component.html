@@ -1,0 +1,82 @@
+
+<link rel="stylesheet" href="reserva.component.css">
+<body>
+    <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" formControlName="nombre">
+        <div class="error-message" *ngIf="formulario.get('nombre')?.hasError('required') && formulario.get('nombre')?.touched">
+          El nombre es requerido y debe tener al menos 3 caracteres.
+        </div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email">
+        <div class="error-message" *ngIf="formulario.get('email')?.hasError('required') && formulario.get('email')?.touched">
+          Ingresa un correo electrónico válido.
+        </div>
+      
+        <label for="Direccion">Direccion:</label>
+        <input type="text" id="direccion" formControlName="direccion">
+      
+        <label for="telefono">Telefono:</label>
+        <input type="text" id="telefono" formControlName="telefono">
+
+        <div class="Tipohabitacion">
+          <label for="habitacion">Selecciona el tipo de habitación:</label>
+          <select id="habitacion" name="habitacion">
+            <option value="habitacion1">Habitación Simple</option>
+            <option value="habitacion2">Habitación Doble</option>
+            <option value="habitacion3">Habitacion Triple</option>
+          </select>
+      </div>
+
+      <!--<mat-date-range-picker #picker></mat-date-range-picker>
+        <mat-date-range-input [rangePicker]="dateRangePicker">
+            <input matStartDate placeholder="Fecha de inicio" [formControl]="startDateControl">
+            <input matEndDate placeholder="Fecha de fin" [formControl]="endDateControl">
+          </mat-date-range-input> fechas sacadas ya que TIRA ERROR Y NO MUESTRA EL HTML --> 
+          <br>
+          <br>
+          <br>
+        <button type="submit">Finalizar reserva</button>
+        <div class="success-message" *ngIf="exito">¡Formulario enviado con éxito!</div>
+      </form>
+
+
+      <!-- <form class="formulario">
+     <h2 class="titulo_form">RESERVAS</h2>
+     <div class="contenedor_form">
+         <div class="grupo_form">
+             <input type="text" id="nombre" class="ingreso_form" placeholder=" " required>
+             <label for="name" class="label_form">Nombre Completo: </label>
+             <span class="linea_form"></span>
+         </div>
+         <div class="grupo_form">
+             <input type="text" id="nombre" class="ingreso_form" placeholder=" "required>
+             <label for="name" class="label_form">Email: </label>
+             <span class="linea_form"></span>
+         </div>
+         <div class="grupo_form">
+             <input type="text" id="nombre" class="ingreso_form" placeholder=" ">
+             <label for="name" class="label_form">Direccion: </label>
+             <span class="linea_form"></span>
+         </div>
+         <div class="grupo_form">
+             <input type="text" id="nombre" class="ingreso_form" placeholder=" ">
+             <label for="name" class="label_form">Telefono: </label>
+             <span class="linea_form"></span>
+         </div>
+         <div class="grupo_form">
+             <input type="text" id="nombre" class="ingreso_form" placeholder=" " required>
+             <label for="name" class="label_form">Fecha Ingreso(dd/mm/aa): </label>
+             <span class="linea_form"></span>
+         </div>
+         <div class="grupo_form">
+             <input type="text" id="nombre" class="ingreso_form" placeholder=" " required>
+             <label for="name" class="label_form">Fecha Salida(dd/mm/aa): </label>
+             <span class="linea_form"></span>
+         </div>
+             <input type="submit" class="submit_form"value="Continuar">
+     </div>
+    </form>-->  
+ </body>
+ <app-footer></app-footer>
