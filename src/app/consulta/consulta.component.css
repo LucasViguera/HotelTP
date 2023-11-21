@@ -93,7 +93,6 @@ body{
     background-color: rgba(255, 228, 196, 0.623) ;
 }
 
-
 /* Estilos para el formulario */
 form {
     max-width: 400px;
@@ -125,14 +124,12 @@ form {
   
   /* Estilos para el botón de enviar */
   button[type="submit"] {
-    background-color: #c2994e; 
+    background-color: #c2994e; /* Azul */
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    text-align: center;
-    align-content: space-between;
     transition: background-color 0.3s ease;
   }
   
