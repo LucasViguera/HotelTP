@@ -1,24 +1,33 @@
 Nuestro trabajo consiste en desarrollar un sistema de autogestión de reservas para un hotel de la ciudad de Rosario.
 
-Al ingresar a la página el usuario se encontrará con el apartado “Home”, así como también con la opción de “Iniciar sesión” o “Registrarse”.
+Al ingresar a la página el usuario se encontrará con el apartado “Home”, en donde se hara una descripcion de lo que ofrece el hotel. A su vez, la web tendra una barra de navegacion
+que redirigira al usuario a distintas paginas del sitio, entre las opciones dentro de la barra de navegacion se encuentran: Home, Reservar, Habitaciones, Servicios, 
+Ubicacion y Consultar Reserva.
 
 Home: 
 Esta sección del sistema consiste en una página de presentación/bienvenida, la cual contará con datos del hotel (dirección y contactos) y una breve descripción del hotel y sus servicios.
 
-Registrarse:
-Al momento de registrarse se le solicitará al usuario que ingrese un nombre de usuario, un dirección de correo electrónico y una contraseña. 
-Una vez registrado, se le pedirá al usuario que complete algunos de sus datos personales con el fin de no tener que solicitarlos cada vez que realice una reserva, advirtiendo que algunos de ellos NO podrán ser modificados una vez cargados. Estos datos son: [Nombre, Apellido, DNI, fecha de nacimiento] (No modificables)  [Teléfono, dirección, etc] (Modificables).
-
-Iniciar sesión:  
-Se le solicitará al usuario que ingrese su dirección de correo o su nombre de usuario y su contraseña. Una vez iniciada la sesión, se redirigirá al usuario a “Home”, pero ahora tendrá acceso a un menú que le permitirá seleccionar las siguientes opciones: “Nueva reserva”, “Mis reservas”,  “Datos personales”.
-
-Nueva reserva:
-El usuario deberá indicar el rango de fechas en el cual desea hospedarse en el hotel. A continuación, el sistema mostrará las habitaciones disponibles en ese rango de fechas. El usuario podrá seleccionar la que prefiera, accediendo a una breve descripción de cada una (número, capacidad, tipo, servicios). 
+Reservar:
+El usuario deberá indicar sus datos personales (nombre, apellido, direccion, nro telefono, email), el rango de fechas en el cual desea hospedarse en el hotel. A continuación, el sistema mostrará las habitaciones disponibles en ese rango de fechas. El usuario podrá seleccionar la que prefiera, accediendo a una breve descripción de cada una (número, capacidad, tipo, servicios). 
 Una vez seleccionada la habitación, el usuario deberá indicar para cuántas personas es la reserva. En caso de que la reserva no sea individual, se le solicitará al usuario que ingrese los datos personales de las personas que se hospedan con él.
 
-Mis reservas:
-Se mostrará un listado de todas las reservas realizadas por el usuario, así como también la información correspondiente a cada una. Además, el usuario podrá cancelar sus reservas si así lo desea. 
-
-Datos personales: 
-El usuario podrá ver y/o modificar sus datos personales. Solo podrá modificar los datos clasificados como modificables.
+Consultar Reservas:
+Se mostrará la reserva realizada por el usuario, así como también la información correspondiente a la misma.
+El usuario podra consultar las mismas atraves de un codigo aleatorio que se generara una vez realizada la reserva. 
 	
+Habitaciones:
+En esta seccion se mostraran tarjetas las cuales contendran los datos de los tipos de habitaciones disponibles en el hotel (SIMPLE,DOBLE,TRIPLE)
+
+Servicios:
+En esta seccion se mostraran los distintos servicios que ofrece el hotel(Pileta, Gimnasio,etc)
+
+Ubicacion: 
+En la misma se mostraran puntos de interes cercanos al hotel, que le podrian ser de importancia a turistas de la ciudad, asi como un mapa de google maps mostrando la ubicacion del hotel.
+
+----------------------------------------LINKS----------------------------------
+
+Link al modelo de la base de datos(DER) y a las tablas creadas: https://drive.google.com/file/d/1zM0OMHtAr3HNDy4KV8l9Rr-p-9KSHbaN/view?usp=sharing
+
+Link al documento con los requerimientos(funcionales y no funcionales) y las reglas de negocio del sistema a crear: https://docs.google.com/document/d/1QciHOce02CMcneCEmjDCiP0RUS0cCiNxoMs8K34mNec/edit?usp=sharing
+
+Link al documento que presenta las versiones realizadas del modelo de dominio y de un "Caso de uso": https://drive.google.com/file/d/1p8eaTRaZnmT9JJq8vuMGC49e93WUoUlV/view?usp=sharing
