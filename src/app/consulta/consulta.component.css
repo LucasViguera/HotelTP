@@ -124,7 +124,7 @@ form {
   
   /* Estilos para el botón de enviar */
   button[type="submit"] {
-    background-color: #c2994e; /* Azul */
+    background-color: #c2994e;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -134,19 +134,19 @@ form {
   }
   
   button[type="submit"]:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    background-color: #0056b3;
   }
   
   /* Estilos para mensajes de error */
   .error-message {
-    color: #ff0000; /* Rojo */
+    color: #ff0000; 
     font-size: 14px;
     margin-top: 5px;
   }
   
   /* Estilos para mensajes de éxito */
   .success-message {
-    color: #228B22; /* Verde */
+    color: #228B22;
     font-size: 14px;
     margin-top: 5px;
   }

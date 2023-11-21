@@ -2,21 +2,16 @@
 /* --CSS DEL BODY-- */
 body{
     background-color: #0a141d;
-    /*background-image: url(/Hotel/Imagenes/exterior.jpg);*/
 }
 
 .container_home{
-        /*width: 100%;
-        margin: 5px; /*con 0 no da espacion entre conteneirs*/
-        overflow: hidden; /*lo que sobra se esconde */ 
-        background-color: #0a141d;
-        /*box-shadow: 0px 1px 10px rgba(240, 11, 11, 0.623);*/ /* SOLO MUESTRA UN BORDE AL REDEDOR DE CADA CAJA */
-        /*margin-left: 25px;
-        margin-right: 20px; Margenes a la caja*/
-        display: flex; /*Permite poner las imagenes al lado del texto*/
-        justify-content: flex-start; /*Texto del lado izquierdo*/
-        /*border-radius: 0.5rem;*/ /*Le quita las esquinas a la caja*/
-        border-bottom: 10px solid  #c2994e;
+    height: auto;
+    width: auto;
+    overflow: hidden; /*lo que sobra se esconde */ 
+    background-color: #0a141d;
+    display: flex; /*Permite poner las imagenes al lado del texto*/
+    justify-content: flex-start; /*Texto del lado izquierdo*/
+    border-bottom: 5px solid  #c2994e;
 }
 .data_home{
     font-size: 25px;
@@ -24,7 +19,7 @@ body{
     color: white;
     text-align: center;
     align-content: space-between;
-    border-right: 10px solid #c2994e;
+    border-right: 5px solid #c2994e;
 }
 .titulo_home{
     font-size: 20px;
@@ -52,90 +47,79 @@ body{
     background-color:#c2994e;
     color: black;
     width: max-content;
-    padding: 1rem 2rem;
+    padding: 0.7rem 1rem 1.1rem 1.1rem; 
     border-radius: 75rem;
     height: 25px;
+    text-decoration: solid; /*quita subtitulos de botones*/
 }
 /* Estilos para el botón al pasar el mouse */
 .boton_home:hover {
     background-color: #0056b3;
 }
+
 .grid {
     width: 100%;
-    height: auto;
     max-width: 1100px;
     grid-template-columns: repeat(3,100px); 
     grid-template-rows: repeat(3,100px);
-    grid-gap: 10px; /*Espacio entre las imagenes del drid*/
-  
-   
+    display: block;
 }
 .imagen_1{
-    width: 350px;
-    height: 20%;
-grid-row: span 1;
-grid-column: 1;
+    width: 50%;
+    height: 300px;
+    grid-row: span 1;
+    grid-column: 1;
 }
 .imagen_2{
-    width: 380px;
+    width: 50%;
+    height: 300px;
     grid-row: span 2;
     grid-column: 1;
 }
 .imagen_3{
-    width: 350px;
-    height: 20%;
+    width: 50%;
+    height: 300px;
     grid-row: span 2;
     grid-column: 2;
 }
 .imagen_4{
-    width: 400px;
-    height: 40%;
+    width: 50%;
+    height: 300px;
     grid-row: span 1;
     grid-column: 2;
 }
 .imagen_5{
-    width: 500px;
-    height: 40%;
+    width: 50%;
+    height: 300px;
+    grid-row: span 3;
+    grid-column: 1;
+}
+.imagen_6{
+    width: 50%;
+    height: 300px;
     grid-row: span 3;
     grid-column: 2;
 }
+
 .container_home2{
     width: 100%;
     margin: 5px;
     overflow: hidden; /*lo que sobra se esconde */ 
     background-color: #0a141d;
-    /*box-shadow: 0px 1px 10px rgba(240, 11, 11, 0.623);*/ /* SOLO MUESTRA UN BORDE AL REDEDOR DE CADA CAJA */
     margin-left: 25px;
     margin-right: 20px;
-    display: flex;  /*Permite poner las imagenes al lado del texto*/
-    justify-content: flex-end; /*Texto del lado derecho*/
+    display: flex;
+    justify-content: flex-end; 
     border-radius: 0.5rem;
 }
 
 .container_home3{
-    height: 50%;
+    height: 60%;
     width: 25%;
     margin: 20px;
     overflow: hidden; /*lo que sobra se esconde */ 
     background-color: #0a141d;
-    /*box-shadow: 0px 1px 10px rgba(240, 11, 11, 0.623);*/ /* SOLO MUESTRA UN BORDE AL REDEDOR DE CADA CAJA */
-     /*Margenes a la caja*/
     justify-content: center; /*Texto centrado*/
     border-radius: 0.5rem; /*Le quita las esquinas a la caja*/
     margin-left: 500px;
-
-
-    /*lo de abajo es de chatgpt*/
-    /*width: 300px;
-    height: 200px;
-    background-color: #0a141d;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 50px;*/
 } 
