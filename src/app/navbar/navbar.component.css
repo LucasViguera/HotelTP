@@ -1,0 +1,33 @@
+/* CODIGO DEL MENU */ 
+
+header{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #c59d54;
+    width: 100%;
+    clear:both;
+    display: flex;
+    margin: 0;
+}
+
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 74px;
+    margin-right: 50px;
+    width: auto;
+    display: flex;
+    margin-left: 15px;
+}
+
+.menu-item{
+    margin-left: 20px;
+    padding: 20px 25px;
+    float: left;
+    list-style:none ;
+    text-decoration: none;
+    color: #242323;
+    font-weight: bold;
+  }
+

@@ -1,0 +1,125 @@
+
+/* --CSS DEL BODY-- */
+body{
+    background-color: #0a141d;
+}
+
+.container_home{
+    height: auto;
+    width: auto;
+    overflow: hidden; /*lo que sobra se esconde */ 
+    background-color: #0a141d;
+    display: flex; /*Permite poner las imagenes al lado del texto*/
+    justify-content: flex-start; /*Texto del lado izquierdo*/
+    border-bottom: 5px solid  #c2994e;
+}
+.data_home{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    align-content: space-between;
+    border-right: 5px solid #c2994e;
+}
+.titulo_home{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-align: center;
+    align-content: space-between;
+}
+.subtitulo_home{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    align-content: space-between;
+}
+.data_home2{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    align-content: space-between;
+}
+.boton_home{
+    display: inline-block;
+    background-color:#c2994e;
+    color: black;
+    width: max-content;
+    padding: 0.7rem 1rem 1.1rem 1.1rem; 
+    border-radius: 75rem;
+    height: 25px;
+    text-decoration: solid; /*quita subtitulos de botones*/
+}
+/* Estilos para el botón al pasar el mouse */
+.boton_home:hover {
+    background-color: #0056b3;
+}
+
+.grid {
+    width: 100%;
+    max-width: 1100px;
+    grid-template-columns: repeat(3,100px); 
+    grid-template-rows: repeat(3,100px);
+    display: block;
+}
+.imagen_1{
+    width: 50%;
+    height: 300px;
+    grid-row: span 1;
+    grid-column: 1;
+}
+.imagen_2{
+    width: 50%;
+    height: 300px;
+    grid-row: span 2;
+    grid-column: 1;
+}
+.imagen_3{
+    width: 50%;
+    height: 300px;
+    grid-row: span 2;
+    grid-column: 2;
+}
+.imagen_4{
+    width: 50%;
+    height: 300px;
+    grid-row: span 1;
+    grid-column: 2;
+}
+.imagen_5{
+    width: 50%;
+    height: 300px;
+    grid-row: span 3;
+    grid-column: 1;
+}
+.imagen_6{
+    width: 50%;
+    height: 300px;
+    grid-row: span 3;
+    grid-column: 2;
+}
+
+.container_home2{
+    width: 100%;
+    margin: 5px;
+    overflow: hidden; /*lo que sobra se esconde */ 
+    background-color: #0a141d;
+    margin-left: 25px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end; 
+    border-radius: 0.5rem;
+}
+
+.container_home3{
+    height: 60%;
+    width: 25%;
+    margin: 20px;
+    overflow: hidden; /*lo que sobra se esconde */ 
+    background-color: #0a141d;
+    justify-content: center; /*Texto centrado*/
+    border-radius: 0.5rem; /*Le quita las esquinas a la caja*/
+    margin-left: 500px;
+} 
