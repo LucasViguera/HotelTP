@@ -1,4 +1,4 @@
 # HotelTP
 repositorio del hotel 
 
-link del video de la web: https://drive.google.com/drive/u/0/folders/1V_qfNdhBk56kzfQjyx58x-6OxuOwTvod
+link del video de la web: https://drive.google.com/file/d/1ZiZPk3EadU4og0POlemEXA07RNhh_8YY/view?usp=drive_link
