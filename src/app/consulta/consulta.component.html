@@ -1,9 +1,24 @@
-
-<link rel="stylesheet" href="consulta.component.css">
+<head>
+  <link rel="stylesheet" href="consulta.component.css">
+</head>
 <body>
   
   <label for="Codigoreserva">Ingrese codigo de reserva para validar:</label>
   <input type="text" id="Codigoreserva" formControlName="codigoreserva">
+
+  <button type="submit">CONSULTAR</button>
+ 
+  <div class="container_consulta">
+    <div class="Datos ">
+      <h2>Datos de la reserva ingresada</h2>
+      <p><strong>Nombre:</strong></p>
+      <p><strong>Email:</strong></p>
+      <p><strong>Dirección:</strong> </p>
+      <p><strong>Teléfono:</strong> </p>
+      <p><strong>Tipo de Habitación:</strong></p>
+    </div>
+</div>
+
 
 </body>
  <app-footer></app-footer>

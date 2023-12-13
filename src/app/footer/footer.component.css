@@ -5,7 +5,8 @@
 }
 .pie-pagina .grupo-1{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
+    height: 150px;
     margin: auto;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -13,8 +14,8 @@
     padding: 45px 0px;
 }
 .pie-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,40 +23,46 @@
 .pie-pagina .grupo-1 .box figure img{
     width: 250px;
 }
-.pie-pagina .grupo-1 .box h2{
+.pie-pagina .grupo-1 .box2 h2{
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
 }
-.pie-pagina .grupo-1 .box p{
+.pie-pagina .grupo-1 .box2 p{
     color: #efefef;
     margin-bottom: 10px;
 }
-.pie-pagina .grupo-1 .red-social a{
+
+.pie-pagina .grupo-1 .box3 h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box3 .red-social a{
     display: inline-block;
-    text-decoration: none;
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: #c2994e;
+    padding-top: 5px;
+    margin-right: 15px;
     text-align: center;
-    transition: all 300ms ease;
+    background-color:#c2994e;
+    color:white;
 }
-.pie-pagina .grupo-1 .red-social a:hover{
+.pie-pagina .grupo-1 .box3 .red-social a:hover{
     color: #0a141d;
 }
 .pie-pagina .grupo-2{
     background-color: #c2994e;
     text-align: center;
-    color: #fff;
+    color: #000000;
 }
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
 @media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
+    .pie-pagina{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;

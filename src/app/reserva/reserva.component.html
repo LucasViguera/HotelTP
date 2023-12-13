@@ -1,48 +1,69 @@
 
 <link rel="stylesheet" href="reserva.component.css">
 <body>
-    <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+  <form [formGroup]="formulario" id="formulario"(ngSubmit)="enviarFormulario()">
+
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" formControlName="nombre">
-        <div class="error-message" *ngIf="formulario.get('nombre')?.hasError('required') && formulario.get('nombre')?.touched">
-          El nombre es requerido y debe tener al menos 3 caracteres.
+        <div *ngIf="formulario.get('nombre')?.touched && formulario.get('nombre')?.invalid">
+          <div class="error-message">
+            El nombre es requerido y debe tener al menos 3 caracteres.
+          </div>
         </div>
 
+  
         <label for="email">Email:</label>
-        <input type="email" id="email" formControlName="email">
-        <div class="error-message" *ngIf="formulario.get('email')?.hasError('required') && formulario.get('email')?.touched">
-          Ingresa un correo electrónico válido.
+        <input type="email" id="email" formControlName="email" >
+        <div *ngIf="formulario.get('email')?.touched && formulario.get('email')?.invalid">
+          <div class="error-message">
+            Ingresa un correo electrónico válido.
+          </div>
         </div>
-      
+
+        
         <label for="Direccion">Direccion:</label>
         <input type="text" id="direccion" formControlName="direccion">
       
         <label for="telefono">Telefono:</label>
-        <input type="text" id="telefono" formControlName="telefono">
+        <input type="text" id="telefono" formControlName="telefono" >
+        <div *ngIf="formulario.get('telefono')?.touched && formulario.get('telefono')?.invalid">
+          <div class="error-message">
+            Ingrese un número válido de teléfono, debe tener 9 caracteres
+          </div>
+        </div>
+
+        <label for="cantidadPersonas">Cantidad de personas:</label>
+        <input type="text" id="cantidadPersonas" formControlName="cantidadPersonas">
+        <div *ngIf="formulario.get('cantidadPersonas')?.touched && formulario.get('cantidadPersonas')?.invalid">
+          <div class="error-message">
+            La cantidad de personas debe estar entre 1 y 4.
+          </div>
+        </div>
 
         <div class="Tipohabitacion">
           <label for="habitacion">Selecciona el tipo de habitación:</label>
-          <select id="habitacion" name="habitacion">
+          <select id="habitacion" name="habitacion" formControlName="tipohabitacion">
             <option value="habitacion1">Habitación Simple</option>
             <option value="habitacion2">Habitación Doble</option>
             <option value="habitacion3">Habitacion Triple</option>
           </select>
       </div>
-
-      <!--<mat-date-range-picker #picker></mat-date-range-picker>
-        <mat-date-range-input [rangePicker]="dateRangePicker">
-            <input matStartDate placeholder="Fecha de inicio" [formControl]="startDateControl">
-            <input matEndDate placeholder="Fecha de fin" [formControl]="endDateControl">
-          </mat-date-range-input> fechas sacadas ya que TIRA ERROR Y NO MUESTRA EL HTML --> 
           <br>
           <br>
           <br>
         <button type="submit">Finalizar reserva</button>
-        <div class="success-message" *ngIf="exito">¡Formulario enviado con éxito!</div>
+        <div class="success-message" *ngIf="exito" >¡Formulario enviado con éxito!
+        <br>
+        <p>Su contraseña es:{{ formulario.get('password')?.value }}</p>
+        <p> Por favor, Guardela ya que con la misma podra consultar la reserva cuando lo desee</p>
+        </div>
+        <div class="error-message" *ngIf="error" >Los datos son incorrectos, por favor verificar que los mismos cumplan los requisitos</div>
       </form>
+      
+ </body>
+ <app-footer></app-footer>
 
-
-      <!-- <form class="formulario">
+       <!-- <form class="formulario">
      <h2 class="titulo_form">RESERVAS</h2>
      <div class="contenedor_form">
          <div class="grupo_form">
@@ -78,5 +99,3 @@
              <input type="submit" class="submit_form"value="Continuar">
      </div>
     </form>-->  
- </body>
- <app-footer></app-footer>
