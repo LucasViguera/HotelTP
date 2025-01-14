@@ -5,6 +5,5 @@ link del video de la web: https://drive.google.com/file/d/1ZiZPk3EadU4og0POlemEX
 
 Integrantes del grupo: 
 
-Álvaro, Rozas.
 Lucas, Viguera.
 Santiago, Guiñazú.
